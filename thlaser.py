@@ -561,8 +561,8 @@ class Gcode_tools(inkex.Effect):
                  self.options.Xscale, -self.options.Yscale, 1]
             a = [self.options.Xoffset, self.options.Yoffset, 0, 0, 0, 0]
         else:
-            s = ["X[", "Y[", "Z[", "I[", "J[", "K["]
-            s1 = ["*#1+#8]", "*#2+#9]", "]", "*#1]",  "*#2]", "]"]
+            s = ["X", "Y", "Z", "I", "J", "K"]
+            s1 = ["", "", "", "",  "", ""]
             m = [1, -1, 1, 1, -1, 1]
             a = [0, 0, 0, 0, 0, 0]
 
